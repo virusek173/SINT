@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The University Gradebook</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+        <body>
+            <header>
+                <img class="monkey-image" src="./assets/monkey-laptop.png" alt="Monkey student">
+                <h1 class="title">University Gradebook</h1>
+            </header>
+            <nav>
+                <p>MENU</p>
+                <div class="list-style">
+                    <a href="#student-list">Student list</a>
+                    <a href="#courses-list">Courses list</a>
+                </div>
+            </nav>
+            <section id="main-section">
+                    <section id="student-list">
+                        <form>
+                            <h2>STUDENT LIST</h2>
+                            <table>
+                                <tr>
+                                    <th><div class="table-header-container">ID <input class="search" type=search placeholder="Search"></div></th>
+                                    <th><div class="table-header-container">First name <input class="search" type=search placeholder="Search"></div></th>
+                                    <th><div class="table-header-container">Last name <input class="search" type=search placeholder="Search"></div></th>
+                                    <th><div class="table-header-container">Date <input class="search" type=date></div></th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td><input value=0 readonly></td>
+                                    <td><input value=Maria></td>
+                                    <td><input value=Anders></td>
+                                    <td><input type=date value="2019-05-12"></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=1 readonly></td>
+                                    <td><input value=Francisco></td>
+                                    <td><input value=Chang></td>
+                                    <td><input type=date value="2019-05-16"></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=2 readonly></td>
+                                    <td><input value=Ernest></td>
+                                    <td><input value=Handel></td>
+                                    <td><input type=date value="2019-05-11"></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=3 readonly></td>
+                                    <td><input value=Island></td>
+                                    <td><input value=Trading></td>
+                                    <td><input type=date value="2019-02-03"></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=4 readonly></td>
+                                    <td><input value=Giovanni></td>
+                                    <td><input value=Rovelli></td>
+                                    <td><input type=date value="2019-01-19"></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=5 readonly></td>
+                                    <td><input value=Magazzini></td>
+                                    <td><input value=Riuniti></td>
+                                    <td><input type=date value="2019-01-04"></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input required placeholder="First name"></td>
+                                    <td><input required placeholder="Last name"></td>
+                                    <td><input required type=date></td>
+                                    <td>
+                                        <button type="submit" formaction="/">Add</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </section>
+                    <section id="courses-list">
+                        <form>
+                            <h2>COURSES LIST</h2>
+                            <table>
+                                <tr>
+                                    <th><div class="table-header-container">ID <input class="search" type=search placeholder="Search"></div></th>
+                                    <th><div class="table-header-container">Course name <input class="search" type=search placeholder="Search"></div></th>
+                                    <th><div class="table-header-container">Teacher <input class="search" type=search placeholder="Search"></div></th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td><input value=0 readonly></td>
+                                    <td><input value="Uczenie Maszynowe"></td>
+                                    <td><input value=Marian></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=1 readonly></td>
+                                    <td><input value="MISIO"></td>
+                                    <td><input value=Wieloch></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=2 readonly></td>
+                                    <td><input value="Analiza"></td>
+                                    <td><input value=Gruszka></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=3 readonly></td>
+                                    <td><input value="TP"></td>
+                                    <td><input value=Prędki></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=4 readonly></td>
+                                    <td><input value="OPWO"></td>
+                                    <td><input value=Szeląg></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=5 readonly></td>
+                                    <td><input value="Tenis"></td>
+                                    <td><input value=Wołodyjowski></td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input required placeholder="Course Name"></td>
+                                    <td><input required placeholder="Teacher"></td>
+                                    <td>
+                                        <button type="submit" formaction="/">Add</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </section>
+                    <section id="grades-list">
+                        <form>
+                            <h2>GRADES LIST</h2>
+                            <table>
+                                <tr>
+                                    <th><div class="table-header-container">ID <input class="search" type=search placeholder="Search"></div></th>
+                                    <th><div class="table-header-container">Grade <input type=number max=5.0 min=2.0 step=0.5 placeholder="Grade"></div></th>
+                                    <th><div class="table-header-container">Date <input class="search" type=date></div></th>
+                                    <th><div class="table-header-container">Course 
+                                        <select name="course-list">
+                                            <option value="" selected disabled hidden>Choose course</option>
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO">MISIO</option>
+                                            <option value="Analiza">Analiza</option>
+                                            <option value="TP">TP</option>
+                                            <option value="OPWO">OPWO</option>
+                                            <option value="Tenis">Tenis</option>
+                                        </select>
+                                    </div></th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td><input value=0 readonly></td>
+                                    <td><input type=number max=5.0 min=2.0 step=0.5 value=3.5></td>
+                                    <td><input type=date value="2019-05-12"></td>
+                                    <td>
+                                        <select name="course-list">
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO">MISIO</option>
+                                            <option value="Analiza">Analiza</option>
+                                            <option value="TP">TP</option>
+                                            <option value="OPWO">OPWO</option>
+                                            <option value="Tenis">Tenis</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=1 readonly></td>
+                                    <td><input type=number max=5.0 min=2.0 step=0.5 value=3.0></td>
+                                    <td><input type=date value="2019-05-16"></td>
+                                    <td>
+                                        <select name="course-list">
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO" selected>MISIO</option>
+                                            <option value="Analiza">Analiza</option>
+                                            <option value="TP">TP</option>
+                                            <option value="OPWO">OPWO</option>
+                                            <option value="Tenis">Tenis</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=2 readonly></td>
+                                    <td><input type=number max=5.0 min=2.0 step=0.5 value=2.0></td>
+                                    <td><input type=date value="2019-05-11"></td>
+                                    <td>
+                                        <select name="course-list">
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO">MISIO</option>
+                                            <option value="Analiza" selected>Analiza</option>
+                                            <option value="TP">TP</option>
+                                            <option value="OPWO">OPWO</option>
+                                            <option value="Tenis">Tenis</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=3 readonly></td>
+                                    <td><input type=number max=5.0 min=2.0 step=0.5 value=4.0></td>
+                                    <td><input type=date value="2019-02-03"></td>
+                                    <td>
+                                        <select name="course-list">
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO">MISIO</option>
+                                            <option value="Analiza">Analiza</option>
+                                            <option value="TP" selected>TP</option>
+                                            <option value="OPWO">OPWO</option>
+                                            <option value="Tenis">Tenis</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=4 readonly></td>
+                                    <td><input type=number max=5.0 min=2.0 step=0.5 value=4.5></td>
+                                    <td><input type=date value="2019-01-19"></td>
+                                    <td>
+                                        <select name="course-list">
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO">MISIO</option>
+                                            <option value="Analiza">Analiza</option>
+                                            <option value="TP">TP</option>
+                                            <option value="OPWO" selected>OPWO</option>
+                                            <option value="Tenis">Tenis</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input value=5 readonly></td>
+                                    <td><input type=number max=5.0 min=2.0 step=0.5 value=5.0></td>
+                                    <td><input type=date value="2019-01-04"></td>
+                                    <td>
+                                        <select name="course-list">
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO">MISIO</option>
+                                            <option value="Analiza">Analiza</option>
+                                            <option value="TP">TP</option>
+                                            <option value="OPWO">OPWO</option>
+                                            <option value="Tenis" selected>Tenis</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button onclick="window.location.href = '#grades-list'" >See grades</button>
+                                        <button onclick="alert('delete row')">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input required type=number max=5.0 min=2.0 step=0.5 placeholder="Grade"></td>
+                                    <td><input required type=date></td>
+                                    <td>
+                                        <select name="course-list">
+                                            <option value="" selected disabled hidden>Choose course</option>
+                                            <option value="UM">Uczenie Maszynowe</option>
+                                            <option value="MISIO">MISIO</option>
+                                            <option value="Analiza">Analiza</option>
+                                            <option value="TP">TP</option>
+                                            <option value="OPWO">OPWO</option>
+                                            <option value="Tenis">Tenis</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button type="submit" formaction="/">Add</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </section>
+            </section>
+            <footer>
+                    Copyright © 2019 Created by Jack - <a href="https://github.com/virusek173/"><img class="github-logo" src="./assets/github.svg" alt="Github"></a>
+            </footer>
+        </body>
+</html>
